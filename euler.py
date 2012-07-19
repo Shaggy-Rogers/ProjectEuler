@@ -51,8 +51,8 @@ def three():
     return(answer)
 
 def four():
-        x = 0
-        y = 0
+    x = 0
+    y = 0
     if check.palendrome(x):
-        y = x
- 
+        if y < x:
+            y = x 
