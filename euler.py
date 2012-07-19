@@ -50,12 +50,6 @@ def three():
     answer = z
     return(answer)
 
-def testing(inputx, inputy, inputz):
-    print("X: ", inputx)
-    print("Y: ", inputy)
-    print("Z: ", inputz)
-    
-
 def is_prime(input):
     if input % 2 != 0 and input % 3 != 0 and input % 5 != 0:
         if input % 7 != 0:
