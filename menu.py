@@ -35,8 +35,7 @@ while not exit:
         selection = selection + selectionEnd
         selectionEnd = "()"
         selection = selection + selectionEnd
-        '''I understand the risks of eval(), and in this case, found them 
-           to be relitively negligable.'''
-        eval(selection.lower())
+        '''I know eval() is not always safe.'''
+        print(eval(selection.lower()))
 
     ranBefore = True
