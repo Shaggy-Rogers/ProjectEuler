@@ -1,3 +1,4 @@
+import check
 def one():
     x = 0
     answer = 0
@@ -35,13 +36,12 @@ def three():
     x = 0
     y = GIVEN
     z = 0
-    pause = ""
     answer = 0
     while y != 1:
-        while not is_prime(x):
+        while not check.prime(x):
             x += 1
-        if is_prime(x):
-            if is_whole(y / x):
+        if check.prime(x):
+            if check.whole(y / x):
                 y = y / x
                 x = 2
                 if y != 1:
@@ -50,17 +50,9 @@ def three():
     answer = z
     return(answer)
 
-def is_prime(input):
-    if input % 2 != 0 and input % 3 != 0 and input % 5 != 0:
-        if input % 7 != 0:
-            return(True)
-    if input == 2 or input == 3 or input == 5 or input == 7:
-        return(True)
-    if input == 0:
-        return(False)
-    return(False)
-    
-def is_whole(input):
-    if input % 1 != 0:
-        return(False)
-    return(True)
+def four():
+        x = 0
+        y = 0
+    if check.palendrome(x):
+        y = x
+ 
